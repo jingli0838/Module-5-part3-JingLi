@@ -1,10 +1,11 @@
+version: "3.8"
 services:
   # Define mongo
   mongo:
-  image: mongo:6
-  restart: always
-  volumes:
-    - mongo_data:/data/db
+    image: mongo:6
+    restart: always
+    volumes:
+      - mongo_data:/data/db
 
   backend:
     build:
